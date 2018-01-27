@@ -13,10 +13,12 @@ authors = ["The Noise-rs Developers."]
 name = "noise"
 
 [dependencies]
-rand = "0.3"
+rand = "0.4"
 
-[dev-dependencies]
-image = "0.13"
+[dev-dependencies.image]
+version = "0.18"
+features = ["png_codec"]
+default-features = false
 
 [[bench]]
 name = "benches"
